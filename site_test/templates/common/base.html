@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>CMDB管理系统</title>
+    <link href="/static/inspinia_admin-v2.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/inspinia_admin-v2.5/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="/static/inspinia_admin-v2.5/css/animate.css" rel="stylesheet">
+    <link href="/static/inspinia_admin-v2.5/css/style.css" rel="stylesheet">
+
+
+    {% block css %}{% endblock %}
+</head>
+
+<body>
+    <div id="wrapper">
+        {% include "common/menu.html" %}
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            {% include "common/top.html" %}
+            
+            {% block content %}{% endblock %}
+
+            {% include "common/foot.html" %}
+        </div>
+    </div>
+
+
+
+
+</body>
+    <!-- Mainly scripts -->
+    <script src="/static/inspinia_admin-v2.5/js/jquery-2.1.1.js"></script>
+    <script src="/static/inspinia_admin-v2.5/js/bootstrap.min.js"></script>
+    <script src="/static/inspinia_admin-v2.5/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/static/inspinia_admin-v2.5/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="/static/inspinia_admin-v2.5/js/inspinia.js"></script>
+    <script src="/static/inspinia_admin-v2.5/js/plugins/pace/pace.min.js"></script>
+{% block script %}{% endblock %}
+</html>
